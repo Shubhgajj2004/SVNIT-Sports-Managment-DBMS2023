@@ -9,6 +9,7 @@
     android:backgroundTint="@color/background_color">
 
     <LinearLayout
+        android:id="@+id/dep_user_tile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/item_color"

@@ -1,14 +1,17 @@
 package com.example.sspi.svnitsportsmanagment.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sspi.svnitsportsmanagment.Department.UserProfileActivity;
 import com.example.sspi.svnitsportsmanagment.Models.DepUserModel;
 import com.example.sspi.svnitsportsmanagment.R;
 
@@ -38,6 +41,15 @@ public class DepUserAdapter extends RecyclerView.Adapter<DepUserAdapter.userHold
 
         holder.name.setText(adp.getName());
         holder.id.setText(adp.getRollNo());
+
+        holder.depUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, UserProfileActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -47,10 +59,13 @@ public class DepUserAdapter extends RecyclerView.Adapter<DepUserAdapter.userHold
 
     public static class userHolder extends RecyclerView.ViewHolder{
         TextView name, id;
+        LinearLayout depUser;
+
         public userHolder(@NonNull View itemView) {
             super(itemView);
             name =itemView.findViewById(R.id.user_name);
             id = itemView.findViewById(R.id.user_roll_no);
+            depUser = itemView.findViewById(R.id.dep_user_tile);
         }
     }
 }
