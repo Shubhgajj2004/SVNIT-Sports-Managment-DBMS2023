@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Department.DepartmentwiseUsersActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soifa_pro_semibold"
+        android:gravity="center"
+        android:text="SVNIT"
+        android:textColor="@color/appColor"
+        android:textFontWeight="700"
+        android:textSize="29sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <!--    <TextView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:fontFamily="@font/sofia_pro_medium"-->
+        <!--        android:text="Ranking"-->
+        <!--        android:textColor="@color/white"-->
+        <!--        android:textFontWeight="600"-->
+        <!--        android:textSize="25sp" />-->
+
+        <!--        <AutoCompleteTextView-->
+        <!--            android:id="@+id/rankingFilter"-->
+        <!--            android:layout_marginTop="14dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:backgroundTint="@color/foreground_color"-->
+        <!--            android:hint="Ranking"-->
+        <!--            android:paddingHorizontal="15dp"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:paddingVertical="10dp"-->
+        <!--            android:textColorHint="#D6D6D6"-->
+        <!--            android:background="@drawable/round_outline_small"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dep_user_profiles_Rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addUserInDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/appColor"
+        android:src="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>

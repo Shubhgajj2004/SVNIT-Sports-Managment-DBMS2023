@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/sofia_pro_medium"
+        android:text="SVNIT Soprts"
+        android:textColor="#FF9B80"
+        android:textFontWeight="700"
+        android:textSize="30sp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/svnit_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/svnit_logo"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize20Percent" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/svnit_logo"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_outline"
+        android:backgroundTint="#D5D5D5"
+        android:elevation="3dp"
+        android:paddingTop="3dp"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/appColor"
+        app:tabTextAppearance="@style/TabLayout"
+        app:tabTextColor="@color/appColor" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerHome"
+        android:layout_below="@+id/tabLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

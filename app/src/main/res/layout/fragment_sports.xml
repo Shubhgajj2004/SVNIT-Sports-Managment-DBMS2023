@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SportsAndDep.SportsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:text="Choose Sport"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_circket_icon" />
+
+
+            <Button
+                android:id="@+id/cricket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:layout_marginStart="5dp"
+                android:paddingHorizontal="60dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/cricket"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_football_icon" />
+
+
+            <Button
+                android:id="@+id/football"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:layout_marginStart="5dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/football"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_volleyball_icon" />
+
+
+            <Button
+                android:id="@+id/volleyball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:layout_marginStart="5dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/volleyball"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_basketball_icon" />
+
+
+            <Button
+                android:id="@+id/basketball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:layout_marginStart="5dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/basketball"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

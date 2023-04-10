@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SportsAndDep.DepartmentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:text="Choose Department"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_computer_dep" />
+
+
+            <Button
+                android:id="@+id/computer_dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/computer_science"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_electronic_dep" />
+
+
+            <Button
+                android:id="@+id/electronics_dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/electronics"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_mechanical_dep" />
+
+
+            <Button
+                android:id="@+id/mechanical_dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/mechanical"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_electrical_dep" />
+
+
+            <Button
+                android:id="@+id/electrical_dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/electrical"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_chemichal_dep" />
+
+
+            <Button
+                android:id="@+id/chemichal_dep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1000"
+                android:background="@drawable/circular_btn"
+                android:elevation="5dp"
+                android:fontFamily="@font/soifa_pro_semibold"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="15dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="@string/chemical"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
