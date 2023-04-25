@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Department.AddUserDepartmentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/soifa_pro_semibold"
+        android:gravity="center"
+        android:text="Add User"
+        android:textColor="@color/appColor"
+        android:textFontWeight="700"
+        android:textSize="29sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="@color/foreground_color"
+            android:textColorHint="@color/background_color" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll No"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="@color/foreground_color"
+            android:textColorHint="@color/background_color" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="@color/foreground_color"
+            android:textColorHint="@color/background_color" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Overall Score"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_input"
+            android:backgroundTint="@color/foreground_color"
+            android:padding="10dp"
+            android:textColorHint="@color/background_color" />
+
+        <Button
+            android:id="@+id/computer_dep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1000"
+            android:background="@drawable/circular_btn"
+            android:elevation="5dp"
+            android:fontFamily="@font/soifa_pro_semibold"
+            android:paddingVertical="15dp"
+            android:shadowColor="@color/white"
+            android:stateListAnimator="@null"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
