@@ -2,16 +2,32 @@ package com.example.sspi.svnitsportsmanagment.Models;
 
 public class PlayerModel {
 
-    String teamName, rollNo, name;
-    int point;
+    String playerName;
+    String playerId;
+    String teamName;
+    int score;
 
-    PlayerModel(){}
-
-    public PlayerModel(String teamName, String rollNo, String name, int point) {
+    public PlayerModel(String playerName, String playerId, String teamName, int score) {
+        this.playerName = playerName;
+        this.playerId = playerId;
         this.teamName = teamName;
-        this.rollNo = rollNo;
-        this.name = name;
-        this.point = point;
+        this.score = score;
+    }
+
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
+    }
+
+    public String getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(String playerId) {
+        this.playerId = playerId;
     }
 
     public String getTeamName() {
@@ -22,27 +38,12 @@ public class PlayerModel {
         this.teamName = teamName;
     }
 
-    public String getRollNo() {
-        return rollNo;
+    public int getScore() {
+        return score;
     }
 
-    public void setRollNo(String rollNo) {
-        this.rollNo = rollNo;
+    public void setScore(int score) {
+        this.score = score;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPoint() {
-        return point;
-    }
-
-    public void setPoint(int point) {
-        this.point = point;
-    }
 }

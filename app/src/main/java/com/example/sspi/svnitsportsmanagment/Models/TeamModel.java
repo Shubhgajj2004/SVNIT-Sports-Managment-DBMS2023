@@ -2,22 +2,23 @@ package com.example.sspi.svnitsportsmanagment.Models;
 
 public class TeamModel {
 
-    String teamId, teamName;
-    int teamSize;
+    int teamId;
+    String teamName;
+    String deptName;
+    int teamStrength;
 
-    TeamModel(){}
-
-    public TeamModel(String teamId, String teamName, int teamSize) {
+    public TeamModel(int teamId, String teamName, String deptName, int teamStrength) {
         this.teamId = teamId;
         this.teamName = teamName;
-        this.teamSize = teamSize;
+        this.deptName = deptName;
+        this.teamStrength = teamStrength;
     }
 
-    public String getTeamId() {
+    public int getTeamId() {
         return teamId;
     }
 
-    public void setTeamId(String teamId) {
+    public void setTeamId(int teamId) {
         this.teamId = teamId;
     }
 
@@ -29,11 +30,19 @@ public class TeamModel {
         this.teamName = teamName;
     }
 
-    public int getTeamSize() {
-        return teamSize;
+    public String getDeptName() {
+        return deptName;
     }
 
-    public void setTeamSize(int teamSize) {
-        this.teamSize = teamSize;
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+
+    public int getTeamStrength() {
+        return teamStrength;
+    }
+
+    public void setTeamStrength(int teamStrength) {
+        this.teamStrength = teamStrength;
     }
 }
