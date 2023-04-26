@@ -38,10 +38,10 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.playerHold
 
         PlayerModel adp=list.get(position);
 
-        holder.name.setText(adp.getName());
-        holder.id.setText(adp.getRollNo());
+        holder.name.setText(adp.getPlayerName());
+        holder.id.setText(adp.getPlayerId());
         holder.teamName.setText(adp.getTeamName());
-        holder.points.setText(Integer.toString(adp.getPoint()));
+        holder.points.setText(Integer.toString(adp.getScore()));
     }
 
     @Override

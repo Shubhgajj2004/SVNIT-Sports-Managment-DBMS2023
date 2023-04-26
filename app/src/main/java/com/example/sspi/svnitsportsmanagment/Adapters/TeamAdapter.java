@@ -41,8 +41,8 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.teamHolder>{
         TeamModel adp=list.get(position);
 
         holder.name.setText(adp.getTeamName());
-        holder.id.setText(adp.getTeamId());
-        holder.size.setText(Integer.toString(adp.getTeamSize()));
+        holder.id.setText(Integer.toString(adp.getTeamId()));
+        holder.size.setText(Integer.toString(adp.getTeamStrength()));
 
         holder.teamTile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,9 +65,9 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.teamHolder>{
         LinearLayout teamTile;
         public teamHolder(@NonNull View itemView) {
             super(itemView);
-            name =itemView.findViewById(R.id.team_name);
-            id = itemView.findViewById(R.id.team_id);
-            size = itemView.findViewById(R.id.team_size);
+            name =itemView.findViewById(R.id.teamName);
+            id = itemView.findViewById(R.id.teamId);
+            size = itemView.findViewById(R.id.teamStrength);
             teamTile = itemView.findViewById(R.id.team_tile);
         }
     }

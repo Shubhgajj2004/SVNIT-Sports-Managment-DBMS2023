@@ -40,13 +40,19 @@ public class DepUserAdapter extends RecyclerView.Adapter<DepUserAdapter.userHold
         DepUserModel adp=list.get(position);
 
         holder.name.setText(adp.getName());
-        holder.id.setText(adp.getRollNo());
+        holder.id.setText(adp.getAdm_no());
 
         holder.depUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, UserProfileActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("name", adp.getName().toString());
+                intent.putExtra("adm_no", adp.getAdm_no().toString());
+                intent.putExtra("age", Integer.toString(adp.getAge()));
+                intent.putExtra("dept", adp.getDept().toString());
+                intent.putExtra("year", Integer.toString(adp.getYear()));
+                intent.putExtra("gender", adp.getGender().toString());
                 context.startActivity(intent);
             }
         });
