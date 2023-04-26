@@ -32,6 +32,52 @@ public class DepartmentFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), DepartmentwiseUsersActivity.class);
+                intent.putExtra("dept","CSE");
+                startActivity(intent);
+            }
+        });
+
+        binding.electricalDep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), DepartmentwiseUsersActivity.class);
+                intent.putExtra("dept","EE");
+                startActivity(intent);
+            }
+        });
+
+        binding.chemicalDep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), DepartmentwiseUsersActivity.class);
+                intent.putExtra("dept", "CHEM");
+                startActivity(intent);
+            }
+        });
+
+        binding.electronicsDep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), DepartmentwiseUsersActivity.class);
+                intent.putExtra("dept", "ECE");
+                startActivity(intent);
+            }
+        });
+
+        binding.mechanicalDep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), DepartmentwiseUsersActivity.class);
+                intent.putExtra("dept","MECH");
+                startActivity(intent);
+            }
+        });
+
+        binding.civilDep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), DepartmentwiseUsersActivity.class);
+                intent.putExtra("dept","CIVIL");
                 startActivity(intent);
             }
         });

@@ -31,7 +31,8 @@ public class SportsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
-                intent.putExtra("SportName", "Cricket");
+                intent.putExtra("id", 1);
+                intent.putExtra("SportName", "cricket");
                 startActivity(intent);
             }
         });
@@ -41,7 +42,8 @@ public class SportsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
-                intent.putExtra("SportName", "Football");
+                intent.putExtra("id", 2);
+                intent.putExtra("SportName", "football");
                 startActivity(intent);
             }
         });
@@ -51,7 +53,8 @@ public class SportsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
-                intent.putExtra("SportName", "Volleyball");
+                intent.putExtra("id", 4);
+                intent.putExtra("SportName", "volleyball");
                 startActivity(intent);
             }
         });
@@ -61,7 +64,8 @@ public class SportsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), SportActivity.class);
-                intent.putExtra("SportName", "Basketball");
+                intent.putExtra("id", 3);
+                intent.putExtra("SportName", "basketball");
                 startActivity(intent);
             }
         });
